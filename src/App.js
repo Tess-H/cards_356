@@ -8,193 +8,193 @@ import SingleCard from './components/SingleCard';
 import Timer from './components/Timer';
 
 const cardFantasyEasy = [
-  { src: "./cards_356/assets/img/helmet.png", matched: false },
-  { src: "./cards_356/assets/img/potion.png", matched: false },
-  { src: "./cards_356/assets/img/dragon.png", matched: false },
-  { src: "./cards_356/assets/img/wand.png", matched: false }
+  { src: "img/helmet.png", matched: false },
+  { src: "img/potion.png", matched: false },
+  { src: "img/dragon.png", matched: false },
+  { src: "img/wand.png", matched: false }
 ];
 
 const cardFantasy = [
-  { src: "./cards_356/img/helmet.png", matched: false },
-  { src: "./cards_356/img/potion.png", matched: false },
-  { src: "./cards_356/img/dragon.png", matched: false },
-  { src: "./cards_356/img/wand.png", matched: false },
-  { src: "./cards_356/img/unicorn.png", matched: false },
-  { src: "./cards_356/img/sword.png", matched: false },
+  { src: "img/helmet.png", matched: false },
+  { src: "img/potion.png", matched: false },
+  { src: "img/dragon.png", matched: false },
+  { src: "img/wand.png", matched: false },
+  { src: "img/unicorn.png", matched: false },
+  { src: "img/sword.png", matched: false },
 ];
 
 const cardFantasyHard = [
-  { src: "./cards_356/img/helmet.png", matched: false },
-  { src: "./cards_356/img/potion.png", matched: false },
-  { src: "./cards_356/img/dragon.png", matched: false },
-  { src: "./cards_356/img/wand.png", matched: false },
-  { src: "./cards_356/img/unicorn.png", matched: false },
-  { src: "./cards_356/img/sword.png", matched: false },
-  { src: "./cards_356/img/sheild.png", matched: false },
-  { src: "./cards_356/img/crystal.png", matched: false },
+  { src: "img/helmet.png", matched: false },
+  { src: "img/potion.png", matched: false },
+  { src: "img/dragon.png", matched: false },
+  { src: "img/wand.png", matched: false },
+  { src: "img/unicorn.png", matched: false },
+  { src: "img/sword.png", matched: false },
+  { src: "img/sheild.png", matched: false },
+  { src: "img/crystal.png", matched: false },
 ];
 
 const cardSportsEasy = [
-  { src: "./cards_356/img/throw.png", matched: false },
-  { src: "./cards_356/img/ball.png", matched: false },
-  { src: "./cards_356/img/shoe.png", matched: false },
-  { src: "./cards_356/img/swim.png", matched: false },
+  { src: "img/throw.png", matched: false },
+  { src: "img/ball.png", matched: false },
+  { src: "img/shoe.png", matched: false },
+  { src: "img/swim.png", matched: false },
 ];
 
 const cardSports = [
-  { src: "./cards_356/img/throw.png", matched: false },
-  { src: "./cards_356/img/ball.png", matched: false },
-  { src: "./cards_356/img/shoe.png", matched: false },
-  { src: "./cards_356/img/swim.png", matched: false },
-  { src: "./cards_356/img/football.png", matched: false },
-  { src: "./cards_356/img/trophy.png", matched: false },
+  { src: "img/throw.png", matched: false },
+  { src: "img/ball.png", matched: false },
+  { src: "img/shoe.png", matched: false },
+  { src: "img/swim.png", matched: false },
+  { src: "img/football.png", matched: false },
+  { src: "img/trophy.png", matched: false },
 ];
 
 const cardSportsHard = [
-  { src: "./cards_356/img/throw.png", matched: false },
-  { src: "./cards_356/img/ball.png", matched: false },
-  { src: "./cards_356/img/shoe.png", matched: false },
-  { src: "./cards_356/img/swim.png", matched: false },
-  { src: "./cards_356/img/football.png", matched: false },
-  { src: "./cards_356/img/trophy.png", matched: false },
-  { src: "./cards_356/img/bowling.png", matched: false },
-  { src: "./cards_356/img/pong.png", matched: false },
+  { src: "img/throw.png", matched: false },
+  { src: "img/ball.png", matched: false },
+  { src: "img/shoe.png", matched: false },
+  { src: "img/swim.png", matched: false },
+  { src: "img/football.png", matched: false },
+  { src: "img/trophy.png", matched: false },
+  { src: "img/bowling.png", matched: false },
+  { src: "img/pong.png", matched: false },
 ];
 
 const cardGamesEasy = [
-  { src: "./cards_356/img/elden.png", matched: false },
-  { src: "./cards_356/img/mario.png", matched: false },
-  { src: "./cards_356/img/pokeball.png", matched: false },
-  { src: "./cards_356/img/destiny.png", matched: false },
+  { src: "img/elden.png", matched: false },
+  { src: "img/mario.png", matched: false },
+  { src: "img/pokeball.png", matched: false },
+  { src: "img/destiny.png", matched: false },
 ];
 
 const cardGames = [
-  { src: "./cards_356/img/destiny.png", matched: false },
-  { src: "./cards_356/img/hollow.png", matched: false },
-  { src: "./cards_356/img/valorant.png", matched: false },
-  { src: "./cards_356/img/elden.png", matched: false },
-  { src: "./cards_356/img/mario.png", matched: false },
-  { src: "./cards_356/img/pokeball.png", matched: false },
+  { src: "img/destiny.png", matched: false },
+  { src: "img/hollow.png", matched: false },
+  { src: "img/valorant.png", matched: false },
+  { src: "img/elden.png", matched: false },
+  { src: "img/mario.png", matched: false },
+  { src: "img/pokeball.png", matched: false },
 ];
 
 const cardGamesHard = [
-  { src: "./cards_356/img/destiny.png", matched: false },
-  { src: "./cards_356/img/hollow.png", matched: false },
-  { src: "./cards_356/img/valorant.png", matched: false },
-  { src: "./cards_356/img/elden.png", matched: false },
-  { src: "./cards_356/img/mario.png", matched: false },
-  { src: "./cards_356/img/pokeball.png", matched: false },
-  { src: "./cards_356/img/diablo.png", matched: false },
-  { src: "./cards_356/img/sv.png", matched: false },
+  { src: "img/destiny.png", matched: false },
+  { src: "img/hollow.png", matched: false },
+  { src: "img/valorant.png", matched: false },
+  { src: "img/elden.png", matched: false },
+  { src: "img/mario.png", matched: false },
+  { src: "img/pokeball.png", matched: false },
+  { src: "img/diablo.png", matched: false },
+  { src: "img/sv.png", matched: false },
 ];
 
 const cardAnimalsEasy = [
-  { src: "./cards_356/img/dog.png", matched: false },
-  { src: "./cards_356/img/bug.png", matched: false },
-  { src: "./cards_356/img/cat.png", matched: false },
-  { src: "./cards_356/img/chick.png", matched: false },
+  { src: "img/dog.png", matched: false },
+  { src: "img/bug.png", matched: false },
+  { src: "img/cat.png", matched: false },
+  { src: "img/chick.png", matched: false },
 ];
 
 const cardAnimals = [
-  { src: "./cards_356/img/frog.png", matched: false },
-  { src: "./cards_356/img/dog.png", matched: false },
-  { src: "./cards_356/img/bug.png", matched: false },
-  { src: "./cards_356/img/chick.png", matched: false },
-  { src: "./cards_356/img/cat.png", matched: false },
-  { src: "./cards_356/img/camel.png", matched: false },
+  { src: "img/frog.png", matched: false },
+  { src: "img/dog.png", matched: false },
+  { src: "img/bug.png", matched: false },
+  { src: "chick.png", matched: false },
+  { src: "img/cat.png", matched: false },
+  { src: "img/camel.png", matched: false },
 ];
 
 const cardAnimalsHard = [
-  { src: "./cards_356/img/frog.png", matched: false },
-  { src: "./cards_356/img/dog.png", matched: false },
-  { src: "./cards_356/img/bug.png", matched: false },
-  { src: "./cards_356/img/chick.png", matched: false },
-  { src: "./cards_356/img/cat.png", matched: false },
-  { src: "./cards_356/img/camel.png", matched: false },
-  { src: "./cards_356/img/owl.png", matched: false },
-  { src: "./cards_356/img/penguin.png", matched: false },
+  { src: "img/frog.png", matched: false },
+  { src: "img/dog.png", matched: false },
+  { src: "img/bug.png", matched: false },
+  { src: "img/chick.png", matched: false },
+  { src: "img/cat.png", matched: false },
+  { src: "img/camel.png", matched: false },
+  { src: "img/owl.png", matched: false },
+  { src: "img/penguin.png", matched: false },
 ];
 
 
 const cardFoodsEasy = [
-  { src: "./cards_356/img/pancake.png", matched: false },
-  { src: "./cards_356/img/pizza.png", matched: false },
-  { src: "./cards_356/img/dumpling.png", matched: false },
-  { src: "./cards_356/img/taco.png", matched: false },
+  { src: "img/pancake.png", matched: false },
+  { src: "img/pizza.png", matched: false },
+  { src: "img/dumpling.png", matched: false },
+  { src: "img/taco.png", matched: false },
 ];
 
 const cardFoods = [
-  { src: "./cards_356./img/pancake.png", matched: false },
-  { src: "./cards_356./img/pizza.png", matched: false },
-  { src: "./cards_356./img/dumpling.png", matched: false },
-  { src: "./cards_356./img/kfc.png", matched: false },
-  { src: "./cards_356./img/taco.png", matched: false },
-  { src: "./cards_356./img/cake.png", matched: false },
+  { src: "img/pancake.png", matched: false },
+  { src: "img/pizza.png", matched: false },
+  { src: "img/dumpling.png", matched: false },
+  { src: "img/kfc.png", matched: false },
+  { src: "img/taco.png", matched: false },
+  { src: "img/cake.png", matched: false },
 ];
 
 const cardFoodsHard = [
-  { src: "./cards_356/img/pancake.png", matched: false },
-  { src: "./cards_356/img/pizza.png", matched: false },
-  { src: "./cards_356/img/dumpling.png", matched: false },
-  { src: "./cards_356/img/kfc.png", matched: false },
-  { src: "./cards_356/img/taco.png", matched: false },
-  { src: "./cards_356/img/cake.png", matched: false },
-  { src: "./cards_356/img/cotton.png", matched: false },
-  { src: "./cards_356/img/burger.png", matched: false },
+  { src: "img/pancake.png", matched: false },
+  { src: "img/pizza.png", matched: false },
+  { src: "img/dumpling.png", matched: false },
+  { src: "img/kfc.png", matched: false },
+  { src: "img/taco.png", matched: false },
+  { src: "img/cake.png", matched: false },
+  { src: "img/cotton.png", matched: false },
+  { src: "img/burger.png", matched: false },
 ];
 
 const cardStarWarsEasy = [
-  { src: "./cards_356/img/trooper.png", matched: false },
-  { src: "./cards_356/img/vader.png", matched: false },
-  { src: "./cards_356/img/r2.png", matched: false },
-  { src: "./cards_356/img/mf.png", matched: false },
+  { src: "img/trooper.png", matched: false },
+  { src: "img/vader.png", matched: false },
+  { src: "img/r2.png", matched: false },
+  { src: "img/mf.png", matched: false },
 ];
 
 const cardStarWars = [
-  { src: "./cards_356/img/trooper.png", matched: false },
-  { src: "./cards_356/img/vader.png", matched: false },
-  { src: "./cards_356/img/star.png", matched: false },
-  { src: "./cards_356/img/r2.png", matched: false },
-  { src: "./cards_356/img/mf.png", matched: false },
-  { src: "./cards_356/img/at.png", matched: false },
+  { src: "img/trooper.png", matched: false },
+  { src: "img/vader.png", matched: false },
+  { src: "img/star.png", matched: false },
+  { src: "img/r2.png", matched: false },
+  { src: "img/mf.png", matched: false },
+  { src: "img/at.png", matched: false },
 ];
 
 const cardStarWarsHard = [
-  { src: "./cards_356/img/trooper.png", matched: false },
-  { src: "./cards_356/img/vader.png", matched: false },
-  { src: "./cards_356/img/star.png", matched: false },
-  { src: "./cards_356/img/r2.png", matched: false },
-  { src: "./cards_356/img/mf.png", matched: false },
-  { src: "./cards_356/img/at.png", matched: false },
-  { src: "./cards_356/img/c3po.png", matched: false },
-  { src: "./cards_356/img/rebel.png", matched: false },
+  { src: "img/trooper.png", matched: false },
+  { src: "img/vader.png", matched: false },
+  { src: "img/star.png", matched: false },
+  { src: "img/r2.png", matched: false },
+  { src: "img/mf.png", matched: false },
+  { src: "img/at.png", matched: false },
+  { src: "img/c3po.png", matched: false },
+  { src: "img/rebel.png", matched: false },
 ];
 
 const cardRetroEasy = [
-  { src: "./cards_356/img/phone.png", matched: false },
-  { src: "./cards_356/img/atari.png", matched: false },
-  { src: "./cards_356/img/floppy.png", matched: false },
-  { src: "./cards_356/img/cassette.png", matched: false },
+  { src: "img/phone.png", matched: false },
+  { src: "img/atari.png", matched: false },
+  { src: "img/floppy.png", matched: false },
+  { src: "img/cassette.png", matched: false },
 ];
 
 const cardRetro = [
-  { src: "./cards_356/img/comp.png", matched: false },
-  { src: "./cards_356/img/phone.png", matched: false },
-  { src: "./cards_356/img/atari.png", matched: false },
-  { src: "./cards_356/img/cassette.png", matched: false },
-  { src: "./cards_356/img/cam.png", matched: false },
-  { src: "./cards_356/img/floppy.png", matched: false },
+  { src: "img/comp.png", matched: false },
+  { src: "img/phone.png", matched: false },
+  { src: "img/atari.png", matched: false },
+  { src: "img/cassette.png", matched: false },
+  { src: "img/cam.png", matched: false },
+  { src: "img/floppy.png", matched: false },
 ];
 
 const cardRetroHard = [
-  { src: "./cards_356/img/comp.png", matched: false },
-  { src: "./cards_356/img/phone.png", matched: false },
-  { src: "./cards_356/img/atari.png", matched: false },
-  { src: "./cards_356/img/cassette.png", matched: false },
-  { src: "./cards_356/img/cam.png", matched: false },
-  { src: "./cards_356/img/floppy.png", matched: false },
-  { src: "./cards_356/img/news.png", matched: false },
-  { src: "./cards_356/img/film.png", matched: false },
+  { src: "img/comp.png", matched: false },
+  { src: "img/phone.png", matched: false },
+  { src: "img/atari.png", matched: false },
+  { src: "img/cassette.png", matched: false },
+  { src: "img/cam.png", matched: false },
+  { src: "img/floppy.png", matched: false },
+  { src: "img/news.png", matched: false },
+  { src: "img/film.png", matched: false },
 ];
 
 
