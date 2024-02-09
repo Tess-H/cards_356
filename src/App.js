@@ -8,30 +8,30 @@ import SingleCard from './components/SingleCard';
 import Timer from './components/Timer';
 
 const cardFantasyEasy = [
-  { src: "./cards_356/img/helmet.png", matched: false },
-  { src: "./cards_356/img/potion.png", matched: false },
-  { src: "./cards_356/img/dragon.png", matched: false },
-  { src: "./cards_356/img/wand.png", matched: false }
+  { src: "./cards_356/assets/img/helmet.png", matched: false },
+  { src: "./cards_356/assets/img/potion.png", matched: false },
+  { src: "./cards_356/assets/img/dragon.png", matched: false },
+  { src: "./cards_356/assets/img/wand.png", matched: false }
 ];
 
 const cardFantasy = [
-  { src: "./cards_356/img/helmet.png", matched: false },
-  { src: "./cards_356/img/potion.png", matched: false },
-  { src: "./cards_356/img/dragon.png", matched: false },
-  { src: "./cards_356/img/wand.png", matched: false },
-  { src: "./cards_356/img/unicorn.png", matched: false },
-  { src: "./cards_356/img/sword.png", matched: false },
+  { src: "./cards_356/assets/img/helmet.png", matched: false },
+  { src: "./cards_356/assets/img/potion.png", matched: false },
+  { src: "./cards_356/assets/img/dragon.png", matched: false },
+  { src: "./cards_356/assets/img/wand.png", matched: false },
+  { src: "./cards_356/assets/img/unicorn.png", matched: false },
+  { src: "./cards_356/assets/img/sword.png", matched: false },
 ];
 
 const cardFantasyHard = [
-  { src: "./cards_356/img/helmet.png", matched: false },
-  { src: "./cards_356/img/potion.png", matched: false },
-  { src: "./cards_356/img/dragon.png", matched: false },
-  { src: "./cards_356/img/wand.png", matched: false },
-  { src: "./cards_356/img/unicorn.png", matched: false },
-  { src: "./cards_356/img/sword.png", matched: false },
-  { src: "./cards_356/img/sheild.png", matched: false },
-  { src: "./cards_356/img/crystal.png", matched: false },
+  { src: "./cards_356/assets/img/helmet.png", matched: false },
+  { src: "./cards_356/assets/img/potion.png", matched: false },
+  { src: "./cards_356/assets/img/dragon.png", matched: false },
+  { src: "./cards_356/assets/img/wand.png", matched: false },
+  { src: "./cards_356/assets/img/unicorn.png", matched: false },
+  { src: "./cards_356/assets/img/sword.png", matched: false },
+  { src: "./cards_356/assets/img/sheild.png", matched: false },
+  { src: "./cards_356/assets/img/crystal.png", matched: false },
 ];
 
 const cardSportsEasy = [
