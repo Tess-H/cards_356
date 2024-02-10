@@ -99,7 +99,7 @@ const cardAnimals = [
   { src: "img/frog.png", matched: false },
   { src: "img/dog.png", matched: false },
   { src: "img/bug.png", matched: false },
-  { src: "chick.png", matched: false },
+  { src: "img/chick.png", matched: false },
   { src: "img/cat.png", matched: false },
   { src: "img/camel.png", matched: false },
 ];
