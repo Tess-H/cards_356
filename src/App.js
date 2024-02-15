@@ -2,16 +2,16 @@
 //used tutorial from https://www.youtube.com/watch?v=ZCKohZwGZMw
 //images from icon8
 
-import './App.css'
+import "./App.css";
 import { useState, useEffect } from "react";
-import SingleCard from './components/SingleCard';
-import Timer from './components/Timer';
+import SingleCard from "./components/SingleCard";
+import Timer from "./components/Timer";
 
 const cardFantasyEasy = [
   { src: "img/helmet.png", matched: false },
   { src: "img/potion.png", matched: false },
   { src: "img/dragon.png", matched: false },
-  { src: "img/wand.png", matched: false }
+  { src: "img/wand.png", matched: false },
 ];
 
 const cardFantasy = [
@@ -115,7 +115,6 @@ const cardAnimalsHard = [
   { src: "img/penguin.png", matched: false },
 ];
 
-
 const cardFoodsEasy = [
   { src: "img/pancake.png", matched: false },
   { src: "img/pizza.png", matched: false },
@@ -197,123 +196,104 @@ const cardRetroHard = [
   { src: "img/film.png", matched: false },
 ];
 
-
 function App() {
   const [cards, setCards] = useState([]);
   const [turns, setTurns] = useState(0);
-  const [theme, setTheme] = useState('');
-  const [difficulty, setDifficulty] = useState('');
+  const [theme, setTheme] = useState("");
+  const [difficulty, setDifficulty] = useState("");
   const [firstButton, setFirstButton] = useState(false);
   const [secondButton, setSecondButton] = useState(false);
   const [insaneButton, setInsaneButton] = useState(false);
   const [newButton, setNewButton] = useState(false);
-  const[choiceOne, setChoiceOne] = useState(null);
-  const[choiceTwo, setChoiceTwo] = useState(null);
-  const[disable, setDisabled] = useState(false);
+  const [choiceOne, setChoiceOne] = useState(null);
+  const [choiceTwo, setChoiceTwo] = useState(null);
+  const [disable, setDisabled] = useState(false);
 
-    
   //sets and bools
   const setSelectedTheme = (t) => {
-    setTheme(t)
-  }
+    setTheme(t);
+  };
   const handleFirstButtonClick = () => {
-    setFirstButton(true)
-    setNewButton(false)
+    setFirstButton(true);
+    setNewButton(false);
     //make sure to set back to false when doing a new game
-  }
+  };
   const handleSecondButtonClick = () => {
-    setSecondButton(true)
-    setNewButton(false)
+    setSecondButton(true);
+    setNewButton(false);
     //make sure to set back to false when doing a new game
-  }
+  };
   const handleNewButtonClick = () => {
-    setFirstButton(false)
-    setSecondButton(false)
-    setNewButton(true)
-    setInsaneButton(false)
+    setFirstButton(false);
+    setSecondButton(false);
+    setNewButton(true);
+    setInsaneButton(false);
     //make sure to set back to false when doing a new game
-  }
+  };
   const handleTimeout = () => {
-    setFirstButton(false)
-    setSecondButton(false)
-    setNewButton(true)
-    setInsaneButton(false)
+    setFirstButton(false);
+    setSecondButton(false);
+    setNewButton(true);
+    setInsaneButton(false);
   };
 
   //assign theme for shuffle cards funcs
   const findThemeAndDiff = (diff) => {
-    if(theme === "Fantasy" && diff === "Easy"){
-      return cardFantasyEasy
+    if (theme === "Fantasy" && diff === "Easy") {
+      return cardFantasyEasy;
+    } else if (theme === "Fantasy" && diff === "Medium") {
+      return cardFantasy;
+    } else if (theme === "Fantasy" && (diff === "Hard" || diff === "Insane")) {
+      return cardFantasyHard;
+    } else if (theme === "Sports" && diff === "Easy") {
+      return cardSportsEasy;
+    } else if (theme === "Sports" && diff === "Medium") {
+      return cardSports;
+    } else if (theme === "Sports" && (diff === "Hard" || diff === "Insane")) {
+      return cardSportsHard;
+    } else if (theme === "Gaming" && diff === "Easy") {
+      return cardGamesEasy;
+    } else if (theme === "Gaming" && diff === "Medium") {
+      return cardGames;
+    } else if (theme === "Gaming" && (diff === "Hard" || diff === "Insane")) {
+      return cardGamesHard;
+    } else if (theme === "Animals" && diff === "Easy") {
+      return cardAnimalsEasy;
+    } else if (theme === "Animals" && diff === "Medium") {
+      return cardAnimals;
+    } else if (theme === "Animals" && (diff === "Hard" || diff === "Insane")) {
+      return cardAnimalsHard;
+    } else if (theme === "Star Wars" && diff === "Easy") {
+      return cardStarWarsEasy;
+    } else if (theme === "Star Wars" && diff === "Medium") {
+      return cardStarWars;
+    } else if (
+      theme === "Star Wars" &&
+      (diff === "Hard" || diff === "Insane")
+    ) {
+      return cardStarWarsHard;
+    } else if (theme === "Food" && diff === "Easy") {
+      return cardFoodsEasy;
+    } else if (theme === "Food" && diff === "Medium") {
+      return cardFoods;
+    } else if (theme === "Food" && (diff === "Hard" || diff === "Insane")) {
+      return cardFoodsHard;
+    } else if (theme === "Retro" && diff === "Easy") {
+      return cardRetroEasy;
+    } else if (theme === "Retro" && diff === "Medium") {
+      return cardRetro;
+    } else {
+      return cardRetroHard;
     }
-    else if(theme === "Fantasy" && diff === "Medium"){
-      return cardFantasy
-    }
-    else if((theme === "Fantasy") && (diff === "Hard" || diff === "Insane")){
-      return cardFantasyHard
-    }
-    else if (theme === "Sports" && diff === "Easy"){
-      return cardSportsEasy
-    }
-    else if(theme === "Sports" && diff === "Medium"){
-      return cardSports
-    }
-    else if(theme === "Sports" && (diff === "Hard" || diff === "Insane")){
-      return cardSportsHard
-    }
-    else if(theme === "Gaming" && diff === "Easy"){
-      return cardGamesEasy
-    }
-    else if(theme === "Gaming" && diff === "Medium"){
-      return cardGames
-    }
-    else if(theme === "Gaming" && (diff === "Hard" || diff === "Insane")){
-      return cardGamesHard
-    }
-    else if (theme === "Animals" && diff === "Easy"){
-      return cardAnimalsEasy
-    }
-    else if (theme === "Animals" && diff === "Medium"){
-      return cardAnimals
-    }
-    else if (theme === "Animals" && (diff === "Hard" || diff === "Insane")){
-      return cardAnimalsHard
-    }
-    else if (theme === "Star Wars" && diff === "Easy"){
-      return cardStarWarsEasy
-    }
-    else if (theme === "Star Wars" && diff === "Medium"){
-      return cardStarWars
-    }
-    else if (theme === "Star Wars" && (diff === "Hard" || diff === "Insane")){
-      return cardStarWarsHard
-    }
-    else if (theme === "Food" && diff === "Easy"){
-      return cardFoodsEasy
-    }
-    else if (theme === "Food" && diff === "Medium"){
-      return cardFoods
-    }
-    else if (theme === "Food" && (diff === "Hard" || diff === "Insane")){
-      return cardFoodsHard
-    }
-    else if (theme === "Retro" && diff === "Easy"){
-      return cardRetroEasy
-    }
-    else if (theme === "Retro" && diff === "Medium"){
-      return cardRetro
-    }
-    else {
-      return cardRetroHard
-    }
-  }
+  };
 
   //shuffle cards
   const shuffleCards2Easy = (difficulty) => {
-    const cardTheme = findThemeAndDiff(difficulty)
-    const randomChance = Math.floor(Math.random() * cardTheme.length)
-    console.log(randomChance)
+    const cardTheme = findThemeAndDiff(difficulty);
+    const randomChance = Math.floor(Math.random() * cardTheme.length);
+    console.log(randomChance);
 
-    const shuffledCards = [cardTheme[randomChance],cardTheme[randomChance]]
+    const shuffledCards = [cardTheme[randomChance], cardTheme[randomChance]]
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }));
 
@@ -322,7 +302,7 @@ function App() {
   };
 
   const shuffleCards = (difficulty) => {
-    const cardTheme = findThemeAndDiff(difficulty)
+    const cardTheme = findThemeAndDiff(difficulty);
     const shuffledCards = [...cardTheme, ...cardTheme]
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }));
@@ -340,7 +320,7 @@ function App() {
   //compare two selected cards
   useEffect(() => {
     if (choiceOne && choiceTwo) {
-      setDisabled(true)
+      setDisabled(true);
       if (choiceOne.src === choiceTwo.src) {
         setCards((prevCards) => {
           return prevCards.map((card) => {
@@ -370,50 +350,165 @@ function App() {
     <div className="App">
       <h1>Memory Match</h1>
 
-      {!secondButton && <div className="theme_row">
-        <h3>Theme: </h3>
-        <button onClick={() => {setSelectedTheme("Fantasy"); handleFirstButtonClick()}}>Fantasy</button>
-        <button onClick={() => {setSelectedTheme("Sports"); handleFirstButtonClick()}}>Sports</button>
-        <button onClick={() => {setSelectedTheme("Gaming"); handleFirstButtonClick()}}>Gaming</button>
-        <button onClick={() => {setSelectedTheme("Animals"); handleFirstButtonClick()}}>Animals</button>
-        <button onClick={() => {setSelectedTheme("Star Wars"); handleFirstButtonClick()}}>Star Wars</button>
-        <button onClick={() => {setSelectedTheme("Food"); handleFirstButtonClick()}}>Food</button>
-        <button onClick={() => {setSelectedTheme("Retro"); handleFirstButtonClick()}}>Retro</button>
-      </div>}
+      {!secondButton && (
+        <div className="theme_row">
+          <h3>Theme: </h3>
+          <button
+            onClick={() => {
+              setSelectedTheme("Fantasy");
+              handleFirstButtonClick();
+            }}
+          >
+            Fantasy
+          </button>
+          <button
+            onClick={() => {
+              setSelectedTheme("Sports");
+              handleFirstButtonClick();
+            }}
+          >
+            Sports
+          </button>
+          <button
+            onClick={() => {
+              setSelectedTheme("Gaming");
+              handleFirstButtonClick();
+            }}
+          >
+            Gaming
+          </button>
+          <button
+            onClick={() => {
+              setSelectedTheme("Animals");
+              handleFirstButtonClick();
+            }}
+          >
+            Animals
+          </button>
+          <button
+            onClick={() => {
+              setSelectedTheme("Star Wars");
+              handleFirstButtonClick();
+            }}
+          >
+            Star Wars
+          </button>
+          <button
+            onClick={() => {
+              setSelectedTheme("Food");
+              handleFirstButtonClick();
+            }}
+          >
+            Food
+          </button>
+          <button
+            onClick={() => {
+              setSelectedTheme("Retro");
+              handleFirstButtonClick();
+            }}
+          >
+            Retro
+          </button>
+        </div>
+      )}
 
-      {!secondButton && firstButton && <div className="diff_row">
-        <h3>Difficulty: </h3>
-        <button onClick={() => {shuffleCards2Easy("Hard"); handleSecondButtonClick()}}>Too Easy</button>
-        <button onClick={() => {shuffleCards("Easy"); handleSecondButtonClick()}}>Easy</button>
-        <button onClick={() => {shuffleCards("Medium"); handleSecondButtonClick()}}>Medium</button>
-        <button onClick={() => {shuffleCards("Hard"); handleSecondButtonClick()}}>Hard</button>
-        <button onClick={() => {setDifficulty("Insane"); shuffleCards("Insane"); handleSecondButtonClick(); setInsaneButton(true)}}>Too Hard</button>
-      </div>}
+      {!secondButton && firstButton && (
+        <div className="diff_row">
+          <h3>Difficulty: </h3>
+          {theme !== "Fantasy" && theme !== "Retro" && theme !== "Gaming" && (
+            <button
+              onClick={() => {
+                shuffleCards2Easy("Hard");
+                handleSecondButtonClick();
+              }}
+            >
+              Too Easy
+            </button>
+          )}
+          {theme !== "Gaming" && theme !== "Sports" && (
+            <button
+              onClick={() => {
+                shuffleCards("Easy");
+                handleSecondButtonClick();
+              }}
+            >
+              Easy
+            </button>
+          )}
+          {theme !== "Food" && (
+            <button
+              onClick={() => {
+                shuffleCards("Medium");
+                handleSecondButtonClick();
+              }}
+            >
+              Medium
+            </button>
+          )}
+          {theme !== "Star Wars" && theme !== "Fantasy" && (
+            <button
+              onClick={() => {
+                shuffleCards("Hard");
+                handleSecondButtonClick();
+              }}
+            >
+              Hard
+            </button>
+          )}
+          {theme !== "Animals" && theme !== "Retro" && (
+            <button
+              onClick={() => {
+                setDifficulty("Insane");
+                shuffleCards("Insane");
+                handleSecondButtonClick();
+                setInsaneButton(true);
+              }}
+            >
+              Too Hard
+            </button>
+          )}
+        </div>
+      )}
 
-      {secondButton && insaneButton && <div>
-        <h3>Countdown Timer</h3>
-        <Timer initialTime={30} difficulty={difficulty} onTimeout={handleTimeout} />
-      </div>}
+      {secondButton && insaneButton && (
+        <div>
+          <h3>Countdown Timer</h3>
+          <Timer
+            initialTime={30}
+            difficulty={difficulty}
+            onTimeout={handleTimeout}
+          />
+        </div>
+      )}
 
-      {secondButton && <div className="card-grid">
-        {cards.map((card) => (
-          <SingleCard 
-            key={card.id} 
-            card = {card}
-            handleChoice={handleChoice}
-            flipped={card === choiceOne || card === choiceTwo || card.matched}
-            disable={disable}
+      {secondButton && (
+        <div className="card-grid">
+          {cards.map((card) => (
+            <SingleCard
+              key={card.id}
+              card={card}
+              handleChoice={handleChoice}
+              flipped={card === choiceOne || card === choiceTwo || card.matched}
+              disable={disable}
             />
-        ))}
-      </div>}
+          ))}
+        </div>
+      )}
 
-      {secondButton && <div>
-        <p>Turns: {turns}</p>
-      <button  onClick={() => {handleNewButtonClick()}}>New Game</button>
-      </div>}
-
+      {secondButton && (
+        <div>
+          <p>Turns: {turns}</p>
+          <button
+            onClick={() => {
+              handleNewButtonClick();
+            }}
+          >
+            New Game
+          </button>
+        </div>
+      )}
     </div>
   );
 }
 
-export default App
+export default App;
